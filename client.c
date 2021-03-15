@@ -40,7 +40,7 @@ main (int argc, char **argv)
 	
 	int n;
 	bzero(buffer,256);
-       	while (n =  read (sockfd, buffer, strlen(buffer)) > 0 ) {
+       	while (n =  read (sockfd, buffer, sizeof(buffer)) > 0 ) {
 		fprintf (stdout, "%s\n", buffer);
 	}
 
